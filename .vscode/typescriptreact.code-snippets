@@ -1,0 +1,79 @@
+{
+	"Client Component": {
+		"prefix": "clientc",
+		"body": [
+			"'use client';",
+			"",
+			"import type React from 'react';",
+			"",
+			"type ${1:ComponentName}Props = {",
+			"\t${2:label}: ${3:string};",
+			"};",
+			"",
+			"export const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = ({ ${2:label} }) => {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t<div>{${2:label}}</div>",
+			"\t\t</div>",
+			"\t);",
+			"};",
+			"",
+			"${1:ComponentName}.displayName = '${1:ComponentName}';"
+		],
+		"description": "Create a client component with TypeScript"
+	},
+	"Server Page": {
+		"prefix": "serverpage",
+		"body": [
+			"type PageProps = {",
+			"\tparams: Promise<{ ${1:slug}: ${2:string} }>;",
+			"};",
+			"",
+			"const Page = async ({ params }: PageProps) => {",
+			"\tconst { ${1:slug} } = await params;",
+			"",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t<h1>${3:Page Title}</h1>",
+			"\t\t</div>",
+			"\t);",
+			"};",
+			"",
+			"export default Page;"
+		],
+		"description": "Create a server-side page component for Next.js App Router"
+	},
+	"React Context Provider": {
+		"prefix": "provider",
+		"body": [
+			"'use client';",
+			"",
+			"import React, { type ReactNode } from 'react';",
+			"",
+			"type ${1:Context}ContextType = {",
+			"\tvalue: ${2:string};",
+			"\tsetValue: (value: ${2:string}) => void;",
+			"};",
+			"",
+			"const ${1:Context}Context = React.createContext<${1:Context}ContextType>({} as ${1:Context}ContextType);",
+			"",
+			"type ${1:Context}ContextProviderProps = {",
+			"\tchildren: ReactNode;",
+			"};",
+			"",
+			"export const ${1:Context}ContextProvider: React.FunctionComponent<${1:Context}ContextProviderProps> = ({ children }) => {",
+			"\tconst [value, setValue] = React.useState<${2:string}>('');",
+			"",
+			"\tconst context: ${1:Context}ContextType = {",
+			"\t\tvalue,",
+			"\t\tsetValue,",
+			"\t};",
+			"",
+			"\treturn <${1:Context}Context.Provider value={context}>{children}</${1:Context}Context.Provider>;",
+			"};",
+			"",
+			"export const use${1:Context} = (): ${1:Context}ContextType => React.useContext(${1:Context}Context);"
+		],
+		"description": "Create a React context provider with TypeScript"
+	}
+}

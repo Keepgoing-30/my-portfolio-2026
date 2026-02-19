@@ -1,0 +1,30 @@
+{
+	// Version of the setting file.  Always 0.2
+	"version": "0.2",
+	// language - current active spelling language
+	"language": "en",
+	"languageSettings": [
+		{
+			"languageId": "*",
+			"locale": "en",
+			"dictionaries": ["wordsEn", "companies", "softwareTerms", "misc"]
+		}
+	],
+	"ignoreRandomStrings": true,
+	"allowCompoundWords": true,
+	// words - list of words to be always considered correct
+	"words": ["roboto"],
+	// flagWords - list of words to be always considered incorrect
+	// This is useful for offensive words and common spelling errors.
+	// For example "hte" should be "the"
+	"flagWords": [],
+	// ignore paths - list of glob patterns for paths to be ignored
+	"ignorePaths": [
+		"node_modules", // this will ignore anything the node_modules directory
+		"**/node_modules", // the same for this one
+		"**/node_modules/**", // the same for this one
+		"node_modules/**", // Doesn't currently work due to how the current working directory is determined.
+		// "vscode-extension", //
+		".git" // Ignore the .git directory
+	]
+}

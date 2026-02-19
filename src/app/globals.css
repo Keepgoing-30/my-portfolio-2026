@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Default theme (Light) */
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+	--muted: #71717a; /* zinc-500 — secondary text */
+	--muted-foreground: #52525b; /* zinc-600 — description text */
+	--border: #f4f4f5; /* zinc-100 — edges */
+	--input: #e4e4e7; /* zinc-200 — input edges */
+	--accent: #14b8a6; /* teal-500 */
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+	--background: #17171a;
+	--foreground: #ededed;
+	--muted: #a1a1aa; /* zinc-400 */
+	--muted-foreground: #a1a1aa; /* zinc-400 */
+	--border: rgba(63, 63, 70, 0.4); /* zinc-700/40% */
+	--input: #3f3f46; /* zinc-700 */
+	--accent: #14b8a6;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-accent: var(--accent);
+	--font-sans: var(--font-roboto-sans);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	background-color: var(--background);
+	color: var(--foreground);
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: rgb(200, 201, 199);
+	border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
