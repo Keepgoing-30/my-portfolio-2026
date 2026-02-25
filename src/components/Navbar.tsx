@@ -52,7 +52,7 @@ export function Navbar() {
 	const pathname = usePathname();
 
 	// Find the current page name to display on the Menu button.
-	const currentLabel = navLinks.find((link) => link.href === pathname)?.label || 'Menu';
+	const currentLabel = navLinks.find((link) => link.href === pathname)?.label || 'Projects';
 
 	return (
 		<nav className='relative h-15'>
@@ -66,7 +66,7 @@ export function Navbar() {
 			</ul>
 
 			{/* VIEW MOBILE */}
-			<div className='mt-0 ml-40 flex flex-col items-end md:hidden'>
+			<div className='mt-0 ml-39 flex flex-col items-end md:hidden'>
 				<button
 					onClick={() => setIsOpen(!isOpen)}
 					className='group h-10 flex items-center gap-2 rounded-full border border-foreground/20 bg-background/20 px-4 py-2 font-medium text-foreground text-sm shadow-[0_10px_11px_-5px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)] ring-background'

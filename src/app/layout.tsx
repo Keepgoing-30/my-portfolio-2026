@@ -26,8 +26,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={`${robotoSans.variable} bg-background font-sans antialiased`}>
 				<ThemeProvider>
 					<div className='flex min-h-screen flex-col'>
-						<header className='fixed z-60 mx-auto h-22 w-full backdrop-blur-md md:h-18 md:w-full md:px-20'>
-							<div className='mx-auto flex h-22 w-full flex-row items-start justify-between px-4 py-6 md:h-18 md:max-w-7xl md:px-24 md:pt-5 md:pb-5'>
+						<header className='fixed z-60 mx-auto h-18 w-full backdrop-blur-md md:h-18 md:w-full md:px-20'>
+							<div className='mx-auto flex h-18 w-full flex-row items-start justify-between px-8 py-6 md:h-18 md:max-w-5xl md:px-24 md:pt-5 md:pb-5'>
 								{/* Left box - Logo */}
 								<div className='hidden md:block md:h-10 md:w-12'>{/* place a Logo here! */}</div>
 
@@ -45,11 +45,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						</header>
 
 						{/* Main Content */}
-						<main className='flex-1 pt-24 md:pt-28'>
-							<div className='mx-auto max-w-7xl px-6 md:px-20'>{children}</div>
+						<main className='flex-1 pt-25 md:pt-28'>
+							<div className='mx-auto max-w-none px-8 md:px-20'>{children}</div>
 						</main>
 
-						<div className='mx-auto max-w-7xl px-6 md:px-20'>
+						<div className='mx-auto max-w-7xl px-8 md:px-20'>
 							<Whatsapp />
 						</div>
 

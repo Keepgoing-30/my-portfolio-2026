@@ -5,7 +5,7 @@ import UserIntro from '@/components/UserIntro';
 import WorkStation from '@/components/Kudos';
 export default function resume() {
 	return (
-		<main className='mx-auto w-full max-w-7xl '>
+		<main className='mx-auto w-full max-w-5xl'>
 			{/* Hero Section */}
 			<UserIntro />
 			{/* Reviews Section */}

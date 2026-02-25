@@ -4,7 +4,7 @@ import { ProjectNavbar } from '@/components/projectnav';
 import FigmaCard from '@/components/figma';
 import { motion } from 'motion/react';
 
-export default function Projectsfigma() {
+export default function ProjectsPage() {
 	return (
 		<div>
 			{/* Navigation bar */}
@@ -12,17 +12,16 @@ export default function Projectsfigma() {
 				<ProjectNavbar />
 			</nav>
 			<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-				<main className='mx-auto h-fit w-full max-w-5xl mt-15 md:mt-0'>
+				<main className='mx-auto h-fit w-full max-w-5xl items-center mt-15 md:mt-0'>
 					<h1 className='mb-8 text-center font-bold text-[31px] text-foreground leading-10 tracking-normal md:text-[2.75rem]'>
-						Crafting Digital Excellence
+						Where ideas take shape in code
 					</h1>
 
 					<p className='text-foreground/70 text-base font-normal font-sans text-center leading-7 tracking-normal mb-11'>
-						Explore a curated selection of high-fidelity projects that demonstrate my proficiency in UI/UX design, web
-						development, and system logic. Leveraging cutting-edge technologies, I focus on building scalable, maintainable, and
-						high-performance solutions that bridge the gap between aesthetic design and technical precision.
+						Explore a diverse range of projects showcasing my work in UI design, web development, and system logic. Built with
+						modern technologies and a focus on maintainable, high-quality code.
 					</p>
-					<FigmaCard />
+					<ProjectCard />
 				</main>
 			</motion.div>
 		</div>

@@ -16,7 +16,7 @@ export default function AboutPage() {
 			{/* Two-column layout */}
 			<motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
 				<h1 className='text-left font-bold font-sans text-[31px] leading-10 md:text-5xl text-foreground md:leading-14 tracking-[-0.01em] mb-7 md:mb-10'>
-					Building digital products with precision and purpose
+					Building digital products with precision <br /> and purpose
 				</h1>
 			</motion.div>
 			<div className='flex flex-col gap-5 md:flex-row md:gap-16'>
