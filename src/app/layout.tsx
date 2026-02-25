@@ -27,14 +27,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<ThemeProvider>
 					<div className='flex min-h-screen flex-col'>
 						<header className='fixed z-60 mx-auto h-18 w-full backdrop-blur-md md:h-18 md:w-full md:px-20'>
-							<div className='mx-auto flex h-18 w-full flex-row items-start justify-between px-8 py-6 md:h-18 md:max-w-5xl md:px-24 md:pt-5 md:pb-5'>
+							<div className='mx-auto flex h-18 w-full flex-row items-start justify-between px-6 py-6 md:h-18 md:max-w-5xl md:px-24 md:pt-5 md:pb-5'>
 								{/* Left box - Logo */}
 								<div className='hidden md:block md:h-10 md:w-12'>{/* place a Logo here! */}</div>
 
 								<div className='h-10 w-10 md:hidden'></div>
 
 								{/* Navigation bar */}
-								<nav className='flex md:items-center md:justify-center md:overflow-hidden'>
+								<nav className='flex md:overflow-hidden  w-50 md:w-75'>
 									<Navbar />
 								</nav>
 

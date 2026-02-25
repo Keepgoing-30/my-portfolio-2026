@@ -66,10 +66,10 @@ export function Navbar() {
 			</ul>
 
 			{/* VIEW MOBILE */}
-			<div className='mt-0 ml-39 flex flex-col items-end md:hidden'>
+			<div className='relative flex flex-col items-center md:hidden ml-28'>
 				<button
 					onClick={() => setIsOpen(!isOpen)}
-					className='group h-10 flex items-center gap-2 rounded-full border border-foreground/20 bg-background/20 px-4 py-2 font-medium text-foreground text-sm shadow-[0_10px_11px_-5px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)] ring-background'
+					className='group h-10 flex items-left gap-2 rounded-full border border-foreground/20 bg-background/20 px-4 py-2 font-medium text-foreground text-sm shadow-[0_10px_11px_-5px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)]'
 				>
 					{currentLabel}
 					<svg
@@ -87,8 +87,10 @@ export function Navbar() {
 						{/* The overlay that is pressed to exit closes the menu. */}
 						<div className='fixed inset-0 z-40' onClick={() => setIsOpen(false)}></div>
 
-						<ul className='fade-in zoom-in-95 absolute top-px right-[-60] z-50 mt-[-2] w-90 animate-in overflow-hidden rounded-2xl border border-foreground/10 bg-background p-1 shadow-lg ring-1 ring-zinc-900/5 duration-200'>
-							<div className='relative px-3 pt-3 pb-4 text-base text-foreground'>Navigation</div>
+						<ul className='absolute top-full right-0 z-50 mt-2 w-64 translate-x-0 animate-in fade-in zoom-in-95 overflow-hidden rounded-2xl border border-foreground/10 bg-background p-2 shadow-lg duration-200'>
+							<div className='px-3 pt-3 pb-2 text-xs font-semibold uppercase tracking-widest text-foreground/50'>
+								Navigation
+							</div>
 							{navLinks.map((link) => (
 								<li key={link.href}>
 									<Link

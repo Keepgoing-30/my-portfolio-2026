@@ -34,8 +34,8 @@ function NavbarItem({ children, path }: NavbarItemProps) {
 					<div
 						className='z-0 h-8 w-0.5'
 						style={{
-							background: 'linear-gradient(to bottom, transparent, oklch(70.4% 0.14 182.503), transparent)',
-							boxShadow: '-2px 0 12px oklch(70.4% 0.14 182.503)',
+							background: 'block',
+							boxShadow: 'block',
 						}}
 					></div>
 				</div>
@@ -55,7 +55,7 @@ export function ProjectNavbar() {
 	return (
 		<nav className='relative'>
 			{/* VIEW DESKTOP */}
-			<ul className='h-10 md:h-20 flex flex-row md:flex-col px-25 md:5 -mt-17 md:mt-0 items-justify'>
+			<ul className='h-10 md:h-20 flex flex-row md:flex-col px-19 md:5 -mt-17 md:mt-0 items-justify'>
 				{navLinks.map((link) => (
 					<NavbarItem key={link.href} path={link.href}>
 						{link.label}
