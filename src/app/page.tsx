@@ -10,15 +10,17 @@ import { WorkCard } from '@/components/WorkCard';
 export default function Home() {
 	return (
 		<main className='w-full max-w-7xl mx-auto md:pt-8'>
-			{/* Hero Section */}
-			<div className='mb-12 md:mb-6'>
+			{/* Main Content Grid */}
+			<div className='mb-12 md:mb-6 md:hidden'>
 				<HeroSection />
 			</div>
-
-			{/* Main Content Grid */}
 			<div className='flex flex-col gap-8 lg:flex-row lg:gap-16'>
 				{/* Left Column - Articles */}
-				<div className='order-1 flex-1 lg:order-1'>
+				<div className='order-2 flex-1 lg:order-1'>
+					{/* Hero Section */}
+					<div className='mb-12 md:mb-6 hidden md:block'>
+						<HeroSection />
+					</div>
 					<div className='space-y-0'>
 						<ArticleCard
 							date='December 23, 2025'
@@ -48,7 +50,7 @@ export default function Home() {
 				</div>
 
 				{/* Right Column - Sidebar */}
-				<div className='order-2 w-full shrink-0 lg:order-2 lg:w-92'>
+				<div className='order-1 mb-4 w-full shrink-0 lg:order-2 lg:w-92'>
 					<div className='space-y-6'>
 						<NewsletterCard />
 						<WorkCard />

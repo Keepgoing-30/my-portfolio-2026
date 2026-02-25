@@ -20,7 +20,7 @@ const workExperiences: WorkExperience[] = [
 	},
 	{
 		company: 'BYU-Hawaii',
-		role: 'HELP DESK TECHNICIAN',
+		role: 'IT OPERATIONS TECHNICIAN',
 		logo: '/byu.webp',
 		startYear: '2023',
 		endYear: '2024',
@@ -35,8 +35,8 @@ const workExperiences: WorkExperience[] = [
 				height='40'
 				viewBox='0 0 24 24'
 				fill='none'
-				stroke='currentColor'
-				stroke-width='2'
+				stroke='WHITE'
+				stroke-width='1'
 				stroke-linecap='round'
 				stroke-linejoin='round'
 				className='icon icon-tabler icons-tabler-outline icon-tabler-brand-4chan bg-sky-800 rounded-full'
