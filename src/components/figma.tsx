@@ -12,21 +12,22 @@ interface Design {
 const figma: Design[] = [
 	{
 		image: '/mdev.svg',
-		name: 'Event Listener',
-		details: 'Dynamic dashboard for real-time DOM updates and event-driven state management.',
+		name: 'MDEV Home Page',
+		details: 'This is the prototype of the home page of a Web Developer company designed using Adobe Illustrator and Figma.',
 		link: 'https://www.figma.com/proto/FT6xAZAFmdkq5mwkfzi2rB/Untitled?node-id=2-528&t=OVLMrArndhoT5SUp-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
 	},
 	{
-		image: '/grid.webp',
-		name: 'Interactive Uses Section',
-		details: 'Dynamic React interface focused on event-driven state management and optimized DOM manipulation.',
-		link: 'https://github.com/Keepgoing-30/user-section.git',
+		image: '/aboutpage.svg',
+		name: 'Portfolio About Page',
+		details: 'A high fidelity of a portfolio page designed using Figma.',
+		link: 'https://www.figma.com/proto/PGmDY7TClAN01qgd6c9JY3/aboutpage?node-id=6-107&t=3NpGauILYV0FvNuG-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
 	},
 	{
-		image: '/menu.webp',
-		name: 'Dropdown Menu',
-		details: 'Dynamic React dropdown featuring scalable data mapping and sleek UI.',
-		link: 'https://github.com/Keepgoing-30/drop-down-menu.git',
+		image: '/zaplink.svg',
+		name: 'ZapLink',
+		details:
+			'ZapLink: A high-fidelity mobile prototype for seamless photo transfers between devices using Wi-Fi and Bluetooth.',
+		link: 'https://www.figma.com/proto/Sg7QGEkh34yfwODLLZ3yqy/Zaplink-mobile-app-1.4.0--Copy-?node-id=120-37&t=hz8xfP3acmUdHmSH-1&scaling=scale-down&content-scaling=fixed&page-id=34%3A2510&starting-point-node-id=125%3A43&show-proto-sidebar=1',
 	},
 	{
 		image: '/cer.webp',
