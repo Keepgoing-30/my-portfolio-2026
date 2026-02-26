@@ -19,14 +19,13 @@ const figma: Design[] = [
 	{
 		image: '/aboutpage.svg',
 		name: 'Portfolio About Page',
-		details: 'A high fidelity of a portfolio page designed using Figma.',
+		details: 'A development-ready, high-fidelity portfolio prototype designed in Figma. This project explores the intersection of clean UI design and functional UX, tailored for a modern software engineering showcase.',
 		link: 'https://www.figma.com/proto/PGmDY7TClAN01qgd6c9JY3/aboutpage?node-id=6-107&t=3NpGauILYV0FvNuG-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
 	},
 	{
 		image: '/zaplink.svg',
 		name: 'ZapLink',
-		details:
-			'ZapLink: A high-fidelity mobile prototype for seamless photo transfers between devices using Wi-Fi and Bluetooth.',
+		details:'ZapLink: A high-fidelity mobile prototype for seamless photo transfers between devices using Wi-Fi and Bluetooth.',
 		link: 'https://www.figma.com/proto/Sg7QGEkh34yfwODLLZ3yqy/Zaplink-mobile-app-1.4.0--Copy-?node-id=120-37&t=hz8xfP3acmUdHmSH-1&scaling=scale-down&content-scaling=fixed&page-id=34%3A2510&starting-point-node-id=125%3A43&show-proto-sidebar=1',
 	},
 ];
