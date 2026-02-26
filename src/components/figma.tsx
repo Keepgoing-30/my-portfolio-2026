@@ -29,25 +29,6 @@ const figma: Design[] = [
 			'ZapLink: A high-fidelity mobile prototype for seamless photo transfers between devices using Wi-Fi and Bluetooth.',
 		link: 'https://www.figma.com/proto/Sg7QGEkh34yfwODLLZ3yqy/Zaplink-mobile-app-1.4.0--Copy-?node-id=120-37&t=hz8xfP3acmUdHmSH-1&scaling=scale-down&content-scaling=fixed&page-id=34%3A2510&starting-point-node-id=125%3A43&show-proto-sidebar=1',
 	},
-	{
-		image: '/cer.webp',
-		name: 'Certification Carousel',
-		details:
-			'Interactive React carousel showcasing professional UI/UX certifications with responsive design and smooth navigation.',
-		link: 'https://github.com/Keepgoing-30/Portfolioweb.git',
-	},
-	{
-		image: '/slide.webp',
-		name: 'Burger Menu',
-		details: 'Interactive React burger menu with smooth animations and responsive design for seamless navigation.',
-		link: 'https://github.com/Keepgoing-30/Portfolioweb.git',
-	},
-	{
-		image: '/menubar.webp',
-		name: 'Menu Bar',
-		details: 'Interactive React menu bar with responsive design and smooth animations.',
-		link: 'https://github.com/Keepgoing-30/menu-bar.git',
-	},
 ];
 
 export default function FigmaCard() {
