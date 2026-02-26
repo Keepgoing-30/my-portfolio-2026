@@ -19,7 +19,7 @@ const figma: Design[] = [
 	{
 		image: '/aboutpage.svg',
 		name: 'Portfolio About Page',
-		details: 'A development-ready, high-fidelity portfolio prototype designed in Figma. This project explores the intersection of clean UI design and functional UX, tailored for a modern software engineering showcase.',
+		details: 'A minimalist, high-fidelity portfolio prototype designed in Figma. Focuses on seamless UX and a fully responsive layout for mobile and desktop.',
 		link: 'https://www.figma.com/proto/PGmDY7TClAN01qgd6c9JY3/aboutpage?node-id=6-107&t=3NpGauILYV0FvNuG-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
 	},
 	{
