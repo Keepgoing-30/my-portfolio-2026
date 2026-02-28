@@ -52,7 +52,7 @@ const projects: Project[] = [
 
 export default function ProjectCard() {
 	return (
-		<div className='grid grid-cols-1 w-full gap-10 sm:grid-cols-2 lg:grid-cols-3'>
+		<div className='grid grid-cols-1 w-full gap-3 sm:grid-cols-2 lg:grid-cols-3'>
 			{projects.map((project, index) => (
 				<motion.div
 					key={index}
