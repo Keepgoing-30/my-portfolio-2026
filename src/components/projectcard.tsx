@@ -62,20 +62,21 @@ export default function ProjectCard() {
 					transition={{ duration: 0.5, delay: index * 0.1 }}
 					className='flex flex-col gap-2'
 				>
-					<div key={index} className='flex flex-col gap-4 items-center'>
-						{/* image */}
+					<div className='flex flex-col gap-4 items-center'>
+						{/* image container */}
 						<div
-							className='flex h-fit w-fit items-center border border-foreground/10 bg-white/1 shadow-sm 
-                transition-transform duration-500 ease-out hover:scale-105 will-change-transform hover:ring-1 hover:ring-teal-500 rounded-2xl'
+							className='relative overflow-hidden w-full h-72 border-8 border-white/5 bg-white/1 shadow-sm 
+													transition-transform duration-500 ease-out hover:scale-105 will-change-transform 
+													hover:ring-1 hover:ring-teal-500 rounded-2xl'
 						>
-							<a href={project.link} target='_blank' rel='noopener noreferrer' className='flex h-full w-full'>
+							<a href={project.link} target='_blank' rel='noopener noreferrer' className='block h-full w-full'>
 								<Image
 									src={project.image}
 									alt={project.name}
-									width={290}
-									height={100}
-									className='max-h-full max-w-full object-contain rounded-2xl'
-									unoptimized
+									fill
+									sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+									className='object-cover object-top rounded-xl'
+									quality={100} // Ép Next.js nén ở chất lượng cao nhất (mặc định là 75)
 								/>
 							</a>
 						</div>

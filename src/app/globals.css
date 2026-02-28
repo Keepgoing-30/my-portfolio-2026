@@ -66,3 +66,8 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
 	background: rgba(0, 0, 0, 0.2);
 }
+
+.image-render-pixel {
+	image-rendering: -webkit-optimize-contrast; /* Tăng độ tương phản cho trình duyệt máy Mac/iPhone */
+	image-rendering: crisp-edges;
+}
