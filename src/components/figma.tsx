@@ -31,10 +31,16 @@ const figma: Design[] = [
 		link: 'https://www.figma.com/proto/Sg7QGEkh34yfwODLLZ3yqy/Zaplink-mobile-app-1.4.0--Copy-?node-id=120-37&t=hz8xfP3acmUdHmSH-1&scaling=scale-down&content-scaling=fixed&page-id=34%3A2510&starting-point-node-id=125%3A43&show-proto-sidebar=1',
 	},
 	{
-		image: '/music.png',
+		image: '/Ratany.svg',
 		name: 'Ratany Music App',
 		details: 'Ratany is a music app similar to Spotify, but it is specifically designed for Cambodian users.',
 		link: 'https://www.figma.com/proto/Mxl0KSP6VokvvDERLEB7Fg/Ratany-Music-App?node-id=59-184&t=I8Qo4MqBLxRKVzCd-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1',
+	},
+	{
+		image: '/FreeDo.svg',
+		name: 'FreeDo Audio Downloader',
+		details: 'FreeDo is the ultimate mobile audio downloader. Effortlessly save audio from your favorite social platforms, including Facebook, Instagram, TikTok, YouTube, and more.',
+		link: 'https://www.figma.com/proto/NoUpzB5G5WWmUhRiLmP61P/VADO-DOWNLOADER?node-id=3-23&t=KQq2rHmcfjoSZMsk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A23',
 	},
 ];
 
