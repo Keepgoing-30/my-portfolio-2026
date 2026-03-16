@@ -33,13 +33,13 @@ const figma: Design[] = [
 	{
 		image: '/Ratany.svg',
 		name: 'Ratany Music App',
-		details: 'Ratany is a music app similar to Spotify, but it is specifically designed for Cambodian users.',
+		details: 'Ratany is a music app similar to Spotify, designed to bring free entertainment to everyone.',
 		link: 'https://www.figma.com/proto/Mxl0KSP6VokvvDERLEB7Fg/Ratany-Music-App?node-id=59-184&t=I8Qo4MqBLxRKVzCd-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1',
 	},
 	{
 		image: '/FreeDo.svg',
 		name: 'FreeDo Music Downloader',
-		details: 'FreeDo is the ultimate mobile music downloader. Effortlessly save MP3 and MP4 from your favorite social platforms, including Facebook, Instagram, TikTok, YouTube, and more.',
+		details: 'FreeDo: Save high-quality music (MP3) and videos (PM4) from any social platform instantly.',
 		link: 'https://www.figma.com/proto/NoUpzB5G5WWmUhRiLmP61P/VADO-DOWNLOADER?node-id=3-23&t=KQq2rHmcfjoSZMsk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A23',
 	},
 	{
