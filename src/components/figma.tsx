@@ -45,7 +45,7 @@ const figma: Design[] = [
 	{
 		image: '/Kamina AI web.svg',
 		name: 'Kamina 5.0',
-		details: 'A smart and productive AI Medical Assistant that handles up to 3,000 simultaneous calls, manages appointment scheduling, and serves as an expert AI Medical Scribe.',
+		details: 'AI Medical Assistant: Handles 3,000+ calls, schedules appointments, and scribes in real-time.',
 		link: 'https://www.figma.com/proto/g2mrLQmn6BuBdrJ6zWec7I/Untitled?node-id=1-99&t=G6xW2Eo0fEfxQ6T9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
 	},
 ];
