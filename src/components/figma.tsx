@@ -42,6 +42,12 @@ const figma: Design[] = [
 		details: 'FreeDo is the ultimate mobile music downloader. Effortlessly save MP3 and MP4 from your favorite social platforms, including Facebook, Instagram, TikTok, YouTube, and more.',
 		link: 'https://www.figma.com/proto/NoUpzB5G5WWmUhRiLmP61P/VADO-DOWNLOADER?node-id=3-23&t=KQq2rHmcfjoSZMsk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A23',
 	},
+	{
+		image: '/Kamina AI web.svg',
+		name: 'Kamina 5.0',
+		details: 'A smart and productive AI Medical Assistant that handles up to 3,000 simultaneous calls, manages appointment scheduling, and serves as an expert AI Medical Scribe.',
+		link: 'https://www.figma.com/proto/g2mrLQmn6BuBdrJ6zWec7I/Untitled?node-id=1-99&t=G6xW2Eo0fEfxQ6T9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+	},
 ];
 
 export default function FigmaCard() {
