@@ -1,5 +1,6 @@
 'use client';
 import ProjectCard from '@/components/projectcard';
+import CaseStudies from '@/components/CaseStudies';
 import { ProjectNavbar } from '@/components/projectnav';
 import FigmaCard from '@/components/figma';
 import { motion } from 'motion/react';
@@ -22,8 +23,10 @@ export default function ProjectsPage() {
 						modern technologies and a focus on maintainable, high-quality code.
 					</p>
 					<ProjectCard />
+					<CaseStudies />
 				</main>
 			</motion.div>
 		</div>
 	);
 }
+
