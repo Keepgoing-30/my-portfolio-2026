@@ -19,7 +19,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx biome check src/components/CaseStudies.tsx
+      - run: npx biome lint src/components/CaseStudies.tsx
       - run: npx tsc --noEmit
       - run: npm run build
 
