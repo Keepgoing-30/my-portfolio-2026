@@ -19,8 +19,7 @@ const caseStudies: CaseStudy[] = [
 		status: 'Documented project demo',
 		title: 'Essex Family Research',
 		role: 'Project Manager',
-		challenges:
-			'Choose suitable technology and a delivery process while keeping the work aligned with customer requirements.',
+		challenges: 'Choose suitable technology and a delivery process while keeping the work aligned with customer requirements.',
 		contributions:
 			'Directed technology and development-process decisions, and was responsible for ensuring the product addressed customer requirements.',
 		outcomes:
@@ -65,7 +64,10 @@ const caseStudies: CaseStudy[] = [
 export default function CaseStudies() {
 	return (
 		<section aria-labelledby='case-studies-heading' className='mt-16'>
-			<h2 id='case-studies-heading' className='text-center font-bold text-[31px] text-foreground leading-10 tracking-normal md:text-[2.75rem]'>
+			<h2
+				id='case-studies-heading'
+				className='text-center font-bold text-[31px] text-foreground leading-10 tracking-normal md:text-[2.75rem]'
+			>
 				IT 497 Case Studies
 			</h2>
 			<p className='mx-auto mt-4 max-w-3xl text-center text-base text-foreground/70 leading-7'>
@@ -75,8 +77,8 @@ export default function CaseStudies() {
 				{caseStudies.map((study) => (
 					<article key={study.title} className='rounded-2xl border border-muted-foreground/20 p-6 md:p-8'>
 						<div className='flex flex-col gap-3 md:flex-row md:items-center md:justify-between'>
-							<h3 className='text-2xl font-bold text-foreground'>{study.title}</h3>
-							<span className='w-fit rounded-full border border-muted-foreground/30 px-3 py-1 text-sm text-muted-foreground'>
+							<h3 className='font-bold text-2xl text-foreground'>{study.title}</h3>
+							<span className='w-fit rounded-full border border-muted-foreground/30 px-3 py-1 text-muted-foreground text-sm'>
 								Status: {study.status}
 							</span>
 						</div>
@@ -102,7 +104,7 @@ export default function CaseStudies() {
 								<dd className='mt-1 text-foreground/70'>{study.spiritualGrowth}</dd>
 							</div>
 						</dl>
-						<div className='mt-6 border-t border-muted-foreground/20 pt-4'>
+						<div className='mt-6 border-muted-foreground/20 border-t pt-4'>
 							<h4 className='font-semibold text-foreground'>Evidence</h4>
 							<ul className='mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm'>
 								{study.evidence.map((item) => (
