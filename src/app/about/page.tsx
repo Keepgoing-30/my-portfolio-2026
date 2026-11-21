@@ -41,6 +41,93 @@ export default function AboutPage() {
 								clean code and scalable systems.
 							</p>
 						</motion.div>
+						<motion.section
+							aria-labelledby='faith-and-growth-heading'
+							initial={{ opacity: 0, x: 20 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.5, delay: 0.25 }}
+							className='mt-10'
+						>
+							<h2 id='faith-and-growth-heading' className='text-lg font-semibold text-foreground'>
+								Faith &amp; Spiritual Growth
+							</h2>
+							<p className='pt-2 text-base text-foreground/70 leading-7 tracking-normal'>
+								My Week 2 reflection connects professional growth with action, honesty, and service. I share these principles as
+								guides for how I learn and make engineering decisions.
+							</p>
+							<div className='grid gap-4 pt-5 sm:grid-cols-3'>
+								<section className='rounded-2xl border border-muted-foreground/20 p-5'>
+									<h3 className='font-semibold text-foreground'>Agency</h3>
+									<p className='pt-2 text-sm text-foreground/70 leading-6'>
+										When debugging, I investigate and test my own ideas before asking AI for a complete answer. This practice
+										reinforces independent learning and accountability.
+									</p>
+									<a
+										href='https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/58?lang=eng'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='mt-3 inline-block text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground'
+									>
+										Doctrine and Covenants 58:27–28
+									</a>
+								</section>
+								<section className='rounded-2xl border border-muted-foreground/20 p-5'>
+									<h3 className='font-semibold text-foreground'>Integrity</h3>
+									<p className='pt-2 text-sm text-foreground/70 leading-6'>
+										AI can produce convincing but incorrect code. I aim to understand and test its suggestions before saying a
+										feature works, while keeping honesty and responsibility constant as tools change.
+									</p>
+									<a
+										href='https://www.churchofjesuschrist.org/study/scriptures/nt/heb/13?lang=eng'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='mt-3 inline-block text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground'
+									>
+										Hebrews 13:8
+									</a>
+								</section>
+								<section className='rounded-2xl border border-muted-foreground/20 p-5'>
+									<h3 className='font-semibold text-foreground'>Service</h3>
+									<p className='pt-2 text-sm text-foreground/70 leading-6'>
+										Protecting the people who trust software matters more than releasing quickly. Family-history tools can be
+										one way to help people connect with their families.
+									</p>
+									<a
+										href='https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='mt-3 inline-block text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground'
+									>
+										Mosiah 2:17
+									</a>
+								</section>
+							</div>
+							<section aria-labelledby='references-heading' className='pt-6'>
+								<h3 id='references-heading' className='font-semibold text-foreground'>References</h3>
+								<ul className='mt-2 space-y-2 text-sm text-foreground/70 leading-6'>
+									<li>
+										<a className='underline underline-offset-4 hover:text-foreground' href='https://www.churchofjesuschrist.org/study/general-conference/2018/10/gather-together-in-one-all-things-in-christ?lang=eng' target='_blank' rel='noopener noreferrer'>
+											Bednar, D. A. (2018). “Gather Together in One All Things in Christ.”
+										</a>
+									</li>
+									<li>
+										<a className='underline underline-offset-4 hover:text-foreground' href='https://www.churchofjesuschrist.org/study/general-conference/2021/10/42johnson?lang=eng' target='_blank' rel='noopener noreferrer'>
+											Johnson, C. N. (2021). “Invite Christ to Author Your Story.”
+										</a>
+									</li>
+									<li>
+										<a className='underline underline-offset-4 hover:text-foreground' href='https://www.churchofjesuschrist.org/study/general-conference/2021/10/59nelson?lang=eng' target='_blank' rel='noopener noreferrer'>
+											Nelson, R. M. (2021). “Make Time for the Lord.”
+										</a>
+									</li>
+									<li>
+										<a className='underline underline-offset-4 hover:text-foreground' href='https://www.churchofjesuschrist.org/study/scriptures?lang=eng' target='_blank' rel='noopener noreferrer'>
+											The Church of Jesus Christ of Latter-day Saints. (n.d.). Scriptures.
+										</a>
+									</li>
+								</ul>
+							</section>
+						</motion.section>
 						<motion.div
 							initial={{ opacity: 0, x: 20 }}
 							animate={{ opacity: 1, x: 0 }}
@@ -139,3 +226,4 @@ export default function AboutPage() {
 		</main>
 	);
 }
+
