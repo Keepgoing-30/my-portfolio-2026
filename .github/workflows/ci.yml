@@ -22,4 +22,6 @@ jobs:
       - run: npx biome lint src/components/CaseStudies.tsx
       - run: npx tsc --noEmit
       - run: npm run build
+        env:
+          RESEND_API_KEY: re_ci_build_placeholder
 
